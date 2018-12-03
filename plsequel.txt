@@ -1,0 +1,86 @@
+[?12/?3/?2018 5:34 PM]  Mandal, Devangana:  
+SQLCODE 
+ 
+[?12/?3/?2018 5:37 PM]  Mandal, Devangana:  
+DECLARE
+  iterator NUMBER;
+BEGIN
+  iterator:=1;
+  LOOP
+    DBMS_OUTPUT.PUT_LINE(iterator);
+    iterator:=iterator+1;
+    EXIT WHEN iterator>10;
+  END LOOP;
+END;
+/	DECLARE
+  iterator NUMBER;
+BEGIN
+  iterator:=1;
+  LOOP
+    EXIT WHEN iterator>10;
+    DBMS_OUTPUT.PUT_LINE(iterator);
+    iterator:=iterator+1;   
+  END LOOP;
+END;
+/	DECLARE
+  iterator NUMBER;
+BEGIN
+  iterator:=1;
+  WHILE (iterator<=10)
+  LOOP    
+    DBMS_OUTPUT.PUT_LINE(iterator);    
+    iterator:=iterator+1;   
+  END LOOP;
+END;
+/	DECLARE
+  iterator NUMBER;
+BEGIN
+  iterator:=1;
+  LOOP    
+    DBMS_OUTPUT.PUT_LINE(iterator);
+    EXIT WHEN iterator>10;
+    iterator:=iterator+1;   
+  END LOOP;
+END;
+/
+ 
+ 
+[?12/?3/?2018 5:38 PM]  Mandal, Devangana:  
+DECLARE
+  iterator NUMBER;
+BEGIN
+  iterator:=1;
+  LOOP    
+    DBMS_OUTPUT.PUT_LINE(iterator);
+    EXIT WHEN iterator>10;
+    iterator:=iterator+1;   
+  END LOOP;
+END;
+/ 
+ 
+[?12/?3/?2018 5:47 PM]  Mandal, Devangana:  
+Line 1  : CREATE PROCEDURE proc_phone(p_phone NUMBER) AS
+Line 2 :  BEGIN
+Line 3 :  p_phone := SUBSTR(p_phone, 1, 3);
+Line 5 : DBMS_OUTPUT.PUT_LINE(p_phone);
+Line 6 : END; 
+ 
+[?12/?3/?2018 5:50 PM]  Mandal, Devangana:  
+1. Fetch row from the cursor
+2. Deallocate cursor 
+3. Open cursor
+4. Declare cursor
+5. Close cursor
+6. Process fetched row 
+ 
+[?12/?3/?2018 5:51 PM]  Mandal, Devangana:  
+ DECLARE
+ n_amount NUMBER(4,2) NOT NULL := 10;
+ BEGIN
+ n_amount := 99.9914;
+DBMS_OUTPUT.PUT_LINE(n_amount);
+ END; 
+ 
+[?12/?3/?2018 5:52 PM]  Kumar, Shashank:  
+99.99
+ 

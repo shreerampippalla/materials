@@ -1,0 +1,7 @@
+reading the parameter file allocating the 
+
+why are hints provided at statement level
+
+when u creating materialized view u are using  fast option what does it mean
+
+functionality sandbox
